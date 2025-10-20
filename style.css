@@ -1,0 +1,270 @@
+/* Importar una fuente limpia */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+/* ============================================================
+   Águila Inventario Pro - Estilos de Landing Page
+   ============================================================ */
+
+/* Usamos las mismas variables de color de tu app */
+:root {
+  --primary: #004aad; /* */
+  --primary-dark: #003a9c; /* */
+  --background: #f5f7fa; /* */
+  --card-bg: #ffffff; /* */
+  --border: #e5e7eb; /* */
+  --text: #333333; /* */
+  --muted: #6b7280; /* */
+}
+
+/* Reseteo básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', Tahoma, sans-serif;
+  background: var(--card-bg); /* Fondo blanco para la landing */
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-subtle {
+  color: var(--muted);
+  font-size: 1.1em;
+}
+
+.section-title {
+  font-size: 2.2em;
+  color: var(--primary-dark);
+  margin-bottom: 24px;
+}
+
+/* --- Botones --- */
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+.btn-primary:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,74,173,0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+.btn-secondary:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-lg {
+  padding: 16px 32px;
+  font-size: 1.1em;
+}
+
+/* --- Encabezado --- */
+.navbar {
+  background: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5em;
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 600;
+}
+.nav-link:hover {
+  color: var(--primary);
+}
+
+/* --- Secciones --- */
+section {
+  padding: 80px 0;
+}
+
+/* Hero */
+.hero {
+  background: var(--background);
+  padding: 100px 0;
+}
+
+.hero h2 {
+  font-size: 3em;
+  font-weight: 800;
+  color: var(--primary-dark);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+.hero p {
+  font-size: 1.25em;
+  color: var(--muted);
+  max-width: 700px;
+  margin: 0 auto 32px;
+}
+
+/* Features */
+.features {
+  background: #fff;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.feature-card {
+  background: var(--background);
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+.feature-card h4 {
+  font-size: 1.4em;
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+/* Demo */
+.demo-section {
+  background: var(--background);
+}
+.screenshot-placeholder {
+  max-width: 800px;
+  margin: 32px auto 0;
+  background: #fff;
+  border: 2px dashed var(--border);
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  color: var(--muted);
+}
+
+/* CTA */
+.cta {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+}
+.cta h3 {
+  font-size: 2.5em;
+  margin-bottom: 16px;
+}
+.cta p {
+  font-size: 1.2em;
+  opacity: 0.9;
+  margin-bottom: 24px;
+}
+.cta .btn-primary {
+  background: white;
+  color: var(--primary);
+}
+.cta .btn-primary:hover {
+  background: #f0f0f0;
+  color: var(--primary-dark);
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: #ccc;
+  padding: 40px 0;
+  font-size: 0.9em;
+}
+.footer p {
+  margin-bottom: 8px;
+}
+
+/* Demo Gallery */
+.demo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.demo-gallery img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.demo-gallery img:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+
+/* --- Responsivo --- */
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 2.2em;
+  }
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  .navbar .container {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
