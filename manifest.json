@@ -1,0 +1,26 @@
+{
+  "dir": "ltr",
+  "lang": "es-MX",
+  "name": "Aguila Inventario Pro",
+  "short_name": "Aguila Pro",
+  "description": "Pagina publica de Aguila Inventario Pro.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0021e4",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
