@@ -1,0 +1,19 @@
+# Águila Inventario Pro - Landing Page Oficial
+
+> Página web oficial y de presentación de Águila Inventario Pro, la Progressive Web App para promotores de autoservicio y control de inventario en tienda.
+
+## URLs Oficiales
+- Landing Page Oficial: https://aguila-inventario-page.netlify.app/
+- Aplicación Web (PWA): https://aguilainventario.netlify.app/
+- Política de Privacidad: https://aguilainventario.netlify.app/privacy.html
+- Repositorio del Sitio: https://github.com/chivas11estar-ui/Aguila-inventario-pro-landin-page
+- Repositorio de la App: https://github.com/chivas11estar-ui/Aguila-inventario-pro
+
+## Características Clave
+- Modo Ferrari: Recepción de mercancía acumulativa con 0ms de latencia en memoria.
+- Selector Dinámico de Bodegas: Filtrado automático para mostrar únicamente bodegas con existencias reales.
+- Caducidades Desacopladas (FEFO): Control de vencimientos sin falsas alertas en productos agotados.
+- Promedios Diarios de Rotación: Cálculo matemático con precisión de 1 decimal para reabastecimiento en anaquel.
+- Escáner Google ML Kit: Lectura óptica instantánea de códigos de barras EAN-13, UPC-A y Code 128 con sonido y vibración.
+- Soporte 100% Offline: Funciona en bodegas y sótanos sin conexión celular mediante Service Worker.
+- Multi-Tienda con Determinante: Cifrado y aislamiento estricto de datos con Firebase RTDB.
